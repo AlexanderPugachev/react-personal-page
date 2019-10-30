@@ -1,0 +1,10 @@
+.base-block {
+	display: grid;
+	grid: auto / repeat(12, auto);
+	height: 100vh
+}
+@media (max-width: 767px) {
+	.base-block {
+		grid: auto / repeat(4, auto)
+	}
+}

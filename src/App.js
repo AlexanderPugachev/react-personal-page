@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
+import Base from './components/base/Base';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Nothing is here</p>
-      </header>
+      <Base />
     </div>
   );
 }

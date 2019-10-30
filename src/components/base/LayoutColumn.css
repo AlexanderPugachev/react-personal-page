@@ -1,0 +1,22 @@
+.column-block:first-child {
+	margin-left: 2.6vw;
+}
+.column-block {
+	width: 5.5vw;
+	margin-right: 2.6vw;
+	border: 1px solid rgb(231, 231, 231);
+	border-bottom: 0;
+	border-top: 0;
+	padding: 0;
+	height: 100%;
+	box-sizing: border-box;
+}
+@media (max-width: 767px) {
+	.column-block:first-child {
+		margin-left: 7.4vw;
+	}
+	.column-block {
+		width: 15.75vw;
+		margin-right: 7.4vw;
+	}
+}
