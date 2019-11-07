@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import LayoutColumn from './LayoutColumn';
-import './Base.css';
+import './Layout.css';
 
-class Base extends Component {
+class Layout extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -10,6 +10,7 @@ class Base extends Component {
 		}
 	}
 
+	// отслеживает изменение ширины viewport и прокидывает в state
 	componentDidMount() {
 		this.setState(
 			{width: window.innerWidth},
@@ -20,6 +21,7 @@ class Base extends Component {
 		)
 	}
 
+	// В зависимости от ширины viewport рендерится 12 или 4 колонок layout
 	render() {
 		let layout = []
 		this.state.width >= 768
@@ -27,14 +29,12 @@ class Base extends Component {
 			: layout = [1,2,3,4]
 
 		return (
-			<div className='base-block'>
-				{layout.map((obj, i) => <LayoutColumn obj={obj} key={i} />)}
+			<div className='layout-container'>
+				{layout.map((i) => <LayoutColumn key={i} />)}
 
 			</div>
 		)
 	}
 }
 
-export default Base;
-
-// for(let i = 0; i < 3; i++) (<LayoutColumn />)
+export default Layout;

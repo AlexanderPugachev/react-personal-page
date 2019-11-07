@@ -1,0 +1,17 @@
+.works {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.works_column {
+	width: calc(7.3%*5 + 2.95%*4);
+}
+/* .works_left {
+
+} */
+.works_right {
+	margin-top: 70px;
+}

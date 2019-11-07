@@ -1,0 +1,16 @@
+.content {
+	min-height: 100vh;
+	height: auto;
+	width: inherit;
+	position: relative;
+	z-index: 1;
+}
+.content-container {
+	min-height: inherit;
+	height: auto;
+	width: 94.6%;
+	margin: 0 2.8% 0 2.6%;
+	padding: 15vh 8.1% 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}

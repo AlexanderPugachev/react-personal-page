@@ -1,0 +1,20 @@
+.works--work_container {
+	height: 60vh;
+	margin-bottom: 50px;
+}
+.works--work_img {
+	height: inherit;
+	width: inherit;
+}
+.one > .works--work_img {
+	background-image: url('./../../../img/project-one_mini.png');
+}
+.two > .works--work_img {
+	background-image: url('./../../../img/project-one_mini.png');
+}
+.three > .works--work_img {
+	background-image: url('./../../../img/project-one_mini.png');
+}
+.four > .works--work_img {
+	background-image: url('./../../../img/project-one_mini.png');
+}

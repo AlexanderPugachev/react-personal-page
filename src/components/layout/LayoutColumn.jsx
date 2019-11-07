@@ -3,7 +3,7 @@ import './LayoutColumn.css';
 
 const LayoutColumn = () => {
 	return (
-		<div className="column-block"></div>
+		<div className="layout--column"></div>
 	);
 }
 

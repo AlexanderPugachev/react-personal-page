@@ -1,0 +1,22 @@
+.layout--column {
+	display: inline-block;
+	height: 100%;
+	width: 5.5%; 	/* 5.5vw */
+	margin-right: 2.6%;
+	border: 1px solid rgba(151, 151, 151, 0.1);
+	border-bottom: 0;
+	border-top: 0;
+	box-sizing: border-box;
+}
+.layout--column:first-child {
+	margin-left: 2.6%;
+}
+@media (max-width: 767px) {
+	.layout--column {
+		width: 15.75%;
+		margin-right: 7.4%;
+	}
+	.layout--column:first-child {
+		margin-left: 7.4%;
+	}
+}

@@ -1,0 +1,38 @@
+.header {
+	height: 8vh;
+	width: inherit;
+	box-sizing: border-box;
+	position: fixed;
+	top: 7vh;
+	z-index: 20;
+	background-color: rgba(255,255,255,0);
+	box-shadow: none;
+	transition:
+		transform 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out,
+		background-color 0.3s ease-in-out,
+		top 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out ;
+}
+.header_hide {
+	-webkit-transform: translate3d(0, -15vh, 0);
+	transform: translate3d(0, -15vh, 0);
+}
+.header_mini {
+	top: 0;
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0 5px 5px rgba(1,1,1,0.1);
+}
+.header--my-name_container {
+	margin-left: 10.7%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+.header--my-name_text {
+	color: black;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-size: 20px;
+}

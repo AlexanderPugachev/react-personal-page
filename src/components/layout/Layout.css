@@ -1,0 +1,7 @@
+.layout-container {
+	width: inherit; /* from App */
+	height: 100vh;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 1;
+}

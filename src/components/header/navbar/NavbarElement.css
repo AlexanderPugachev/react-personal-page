@@ -1,0 +1,33 @@
+.navbar--element {
+	height: inherit;
+	width: 13.6%;
+	margin-right: 2.6%;
+}
+.navbar--element:first-child {
+	margin-left: 35.0%;
+}
+.Link {
+	cursor: pointer;
+}
+.navbar--element_flex {
+	height: 20px;
+	width: inherit;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+/*  переопределены стандартные параметры <p>,
+		возможно есть смысл закинуть
+		в reset.css в итоге первые два */
+.navbar--element_text {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-size: 12px;
+
+}
+.navbar--element_line {
+	border: 1px solid black;
+	box-sizing: border-box;
+}

@@ -1,0 +1,11 @@
+.navbar {
+	height: 20px;
+	width: inherit;
+	box-sizing: border-box;
+	/* background-color: beige; */
+	display: inline-flex;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
