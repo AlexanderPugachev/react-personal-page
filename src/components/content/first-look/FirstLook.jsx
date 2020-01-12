@@ -17,16 +17,18 @@ const FirstLook = () => {
 				</h1>
 			</div>
 			<div className="first-look--arrow-container">
-			<Link
-				className='Link'
-				to='href_works'
-				spy={true}
-				smooth="easeInOutCubic"
-				duration={1000}>
-				<div className='first-look--arrow-container_wrapper'>
-					<div><div className="first-look--arrow arrow--down_first"></div></div>
-					<div><div className="first-look--arrow arrow--down_second"></div></div>
-				</div>
+				<Link
+					className='Link'
+					to='href_works'
+					spy={true}
+					smooth="easeInOutCubic"
+					duration={1000}>
+					<div className='first-look--arrow-container_wrapper'>
+						<div className="first-look--arrow-container_wrapper-2">
+							<div><div className="first-look--arrow arrow--down_first"></div></div>
+							<div><div className="first-look--arrow arrow--down_second"></div></div>
+						</div>
+					</div>
 				</Link>
 			</div>
 		</div>

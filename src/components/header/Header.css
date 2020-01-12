@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	position: fixed;
 	top: 7vh;
-	z-index: 20;
+	z-index: 2;
 	background-color: rgba(255,255,255,0);
 	box-shadow: none;
 	transition:
@@ -28,7 +28,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	z-index: 3;
+	z-index: 2;
 }
 .header--my-name_text {
 	color: black;

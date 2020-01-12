@@ -2,10 +2,38 @@
 	height: 20px;
 	width: inherit;
 	box-sizing: border-box;
-	/* background-color: beige; */
 	display: inline-flex;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-
+}
+.navbar--close {
+	position: absolute;
+	height: inherit;
+	width: 20px;
+	right: 2.6%;
+	background-color: royalblue;
+}
+.close {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	opacity: 0.3;
+}
+.close:hover {
+	opacity: 1;
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 10px;
+	content: ' ';
+	height: 21px;
+	width: 2px;
+	background-color: #333;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
 }

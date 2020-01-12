@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap&subset=cyrillic');
 
 .main-font {
 	font-family: 'Ubuntu', sans-serif;
@@ -17,10 +18,22 @@
 .color-second {
 	color: #111;
 }
-/* расчет ширины viewport: calc(100vw - (100vw - 100%)) */
-/* на заметку: ширину viewport также можно получить из documemt */
-/* размеры разметки в viewport [5.5*13 + 2.6*13] */
-/* размеры разметки внутри content-container [7.3%*10 + 3.05%*10] */
+/* расчет ширины viewport: calc(100vw - (100vw - 100%))
+		на заметку: ширину viewport также можно получить из documemt
+		размеры разметки в viewport [5.5*13 + 2.6*13]
+		размеры разметки внутри content-container [7.3%*10 + 3.05%*10] */
+
+/* fonts:
+		main: 16px,
+		header: 40px,
+		list: 16px,
+		list-header: 20px */
+
+/* z-index:
+		0 - layout
+		1 - most of other components
+		2 - header
+		3 - full image of project */
 
 body {
   margin: 0;
@@ -28,7 +41,13 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	/* colors: */
+	--color-0: rgba(255, 255, 255, 0.8);
+	--color-1: #B50837;
+	--color-2: #58a2d1;
+	--color-3: #731dd8;
+	--color-4: #4b9b56;
 }
 
 code {

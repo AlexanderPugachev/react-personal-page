@@ -23,14 +23,25 @@
 }
 .first-look--arrow-container {
 	height: 130px;
-	width: 30px;
+	width: 3%;
 	position: absolute;
 	margin: 0 auto;
 	left: 50%;
 	bottom: 2vh;
 	transform: translateX(-50%);
 }
-.first-look--arrow-container_wrapper > div {
+.first-look--arrow-container_wrapper {
+	height: 130px;
+	width: inherit;
+}
+.first-look--arrow-container_wrapper-2 {
+	width: 30px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-55%);
+}
+.first-look--arrow-container_wrapper-2 > div {
 	height: 30px;
 	width: 30px;
 	transform: rotate(45deg);

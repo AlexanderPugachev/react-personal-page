@@ -1,0 +1,32 @@
+.button-radio_div {
+	display: inline-block;
+}
+.button-radio_div input {
+	display: none;
+}
+.button-radio_div label {
+	box-sizing: border-box;
+	display: inline-block;
+	height: 36px;
+	min-width: 64px;
+	padding: 10px 16px;
+	margin-bottom: 16px;
+
+	border: 1px solid var(--color-0);
+	border-radius: 3px;
+
+	background-color: rgba(255, 255, 255, 0);
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	color: var(--color-0);
+	text-transform: uppercase;
+	transition: background-color 0.1s ease-in-out;
+}
+.button-radio_div input:checked + label {
+	background-color: var(--color-0);
+	color: var(--color-1);
+}

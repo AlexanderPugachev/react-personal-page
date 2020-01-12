@@ -1,50 +1,26 @@
 import React from 'react';
-import './Header.css';
-import Navbar from './navbar/Navbar';
 import {Link as RouteLink} from 'react-router-dom';
+import throttle from 'lodash/throttle'
+import './Header.css';
+
+import Navbar from './navbar/Navbar';
 
 class Header extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			prevScroll: 0,
-			scroll: 0
+			scrollValue: 0,
+			prevScrollValue: 0
 		}
+		this.Listener = this.Listener.bind(this);
+		this.trottledListener = throttle(this.Listener, 1000);
 	}
 
 	componentDidMount() {
-		// записывает нынешнее значение скролла в отдельный стейт и потом обновляем значение скролла.
-		this.setState({
-				prevScroll: this.state.scroll,
-				scroll: window.pageYOffset
-			},
-			window.addEventListener(
-				'scroll',
-				() => {
-					this.setState({
-						prevScroll: this.state.scroll,
-						scroll: window.pageYOffset})
-
-					// первое условие: делать ли хедер зависимым от скролла
-					// второе и следующие: если зависимым, то определяем поведение:
-					// скролл вниз - прячем хедер, вверх - возвращаем мини версию.
-					let header = document.getElementById('header')
-					! this.props.scrolling
-					? (header.classList.add('header_mini')) || (header.classList.remove('header_hide'))
-					: this.state.scroll > this.state.prevScroll
-						? this.state.scroll >= 300
-							? header.classList.add('header_hide') || (header.classList.remove('header_mini'))
-							: header.classList.add('header_mini')
-						: this.state.scroll >= 100
-							? (header.classList.add('header_mini')) ||(header.classList.remove('header_hide'))
-							: header.classList.remove('header_hide', 'header_mini')
-				}
-			),
-		)
+		window.addEventListener('scroll', this.trottledListener)
 	}
 
 	render() {
-		console.log(this.props)
 		return (
 			<div id='header' className="header">
 				<RouteLink to='/'>
@@ -57,6 +33,27 @@ class Header extends React.Component {
 				<Navbar />
 			</div>
 		);
+	}
+
+	Listener() {
+		this.setState({
+			prevScrollValue: this.state.scrollValue,
+			scrollValue: window.pageYOffset
+		})
+		// первое условие: делать ли хедер зависимым от скролла
+		// второе и следующие: если зависимым, то определяем поведение:
+		// скролл вниз - прячем хедер, вверх - возвращаем мини версию.
+		const { scrolling } = this.props
+		const header = document.getElementById('header')
+		! scrolling
+		? (header.classList.add('header_mini')) || (header.classList.remove('header_hide'))
+		: this.state.scrollValue > this.state.prevScrollValue
+			? this.state.scrollValue >= 300
+				? header.classList.add('header_hide') || (header.classList.remove('header_mini'))
+				: header.classList.add('header_mini')
+			: this.state.scrollValue >= 100
+				? (header.classList.add('header_mini')) || (header.classList.remove('header_hide'))
+				: header.classList.remove('header_hide', 'header_mini')
 	}
 }
 

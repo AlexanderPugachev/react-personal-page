@@ -1,0 +1,28 @@
+.error-boundary {
+	position: fixed;
+	height: 100vh;
+	width: calc(100vw - (100vw - 100%));
+
+}
+.error-boundary_wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.error-boundary_wrapper details {
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	padding: .5em .5em 0;
+}
+.error-boundary h2 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.error-boundary h3 {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+strong {
+	font-weight: 600;
+}
