@@ -3,21 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap&subset=cyrillic');
 
-.main-font {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-}
-.headers-font {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-}
-.color-first {
-	color: #848484;
-}
-.color-second {
-	color: #111;
-}
 /* расчет ширины viewport: calc(100vw - (100vw - 100%))
 		на заметку: ширину viewport также можно получить из documemt
 		размеры разметки в viewport [5.5*13 + 2.6*13]
@@ -53,4 +38,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-font {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.headers-font {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.headers-of-work-font {
+	font-size: 38px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 44px;
+	margin-bottom: 30px;
+}
+.descr-of-work-font {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	color: var(--color-0);
+}
+.color-first {
+	color: #848484;
+}
+.color-second {
+	color: #111;
 }

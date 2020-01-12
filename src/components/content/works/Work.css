@@ -2,25 +2,8 @@
 	height: 60vh;
 	margin-bottom: 50px;
 }
-.works--work_img {
+.work--background {
 	height: inherit;
 	width: inherit;
-}
-.one > .works--work_img {
-	background-image: url('./../../../img/project-one_mini.png');
-}
-.two > .works--work_img {
-	background-image: url('./../../../img/project-one_mini.png');
-}
-.three > .works--work_img {
-	background-image: url('./../../../img/project-one_mini.png');
-}
-.four > .works--work_img {
-	background-image: url('./../../../img/project-one_mini.png');
-}
-.error-catch {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position: absolute;
 }

@@ -4,7 +4,7 @@ import {
 } from "../action";
 
 const initialState = {
-	worksList: [],
+	worksList: null,
 	chosenWorkId: 0
 }
 

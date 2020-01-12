@@ -10,11 +10,11 @@ class Works extends React.Component {
 			<div className="works">
 				<div className="works_column works_left">
 					<Work id={0} name='one' src='personal-page'/>
-					<Work  name='three' src='react-store'/>
+					<Work id={2} name='three' src='react-store'/>
 				</div>
 				<div className="works_column works_right">
 					<Work id={1} name='two' src='express-photo'/>
-					<Work  name='four' src='future-project'/>
+					<Work id={3} name='four' src='future-project'/>
 				</div>
 			</div>
 		);
