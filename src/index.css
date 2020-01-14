@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap&subset=cyrillic');
 
-/* расчет ширины viewport: calc(100vw - (100vw - 100%))
+/*  расчет ширины viewport: calc(100vw - (100vw - 100%))
 		на заметку: ширину viewport также можно получить из documemt
 		размеры разметки в viewport [5.5*13 + 2.6*13]
-		размеры разметки внутри content-container [7.3%*10 + 3.05%*10] */
+		размеры разметки внутри content-container [7.3%*10 + 3.05%*10]
 
-/* fonts:
+	fonts:
 		main: 16px,
 		header: 40px,
 		list: 16px,
-		list-header: 20px */
+		list-header: 20px
 
-/* z-index:
+	z-index:
 		0 - layout
 		1 - most of other components
 		2 - header
@@ -33,6 +33,7 @@ body {
 	--color-2: #58a2d1;
 	--color-3: #731dd8;
 	--color-4: #4b9b56;
+	--color-first: #848484;
 }
 
 code {
@@ -60,7 +61,6 @@ code {
 	font-size: 16px;
 	line-height: 24px;
 	margin-bottom: 15px;
-	color: var(--color-0);
 }
 .color-first {
 	color: #848484;

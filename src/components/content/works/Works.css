@@ -9,9 +9,10 @@
 .works_column {
 	width: calc(7.3%*5 + 2.95%*4);
 }
-/* .works_left {
-
-} */
+.works_column a {
+	text-decoration: none;
+	color: var(--color-0)
+}
 .works_right {
 	margin-top: 70px;
 }

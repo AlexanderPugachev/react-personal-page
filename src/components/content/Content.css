@@ -10,7 +10,18 @@
 	height: auto;
 	width: 94.6%;
 	margin: 0 2.8% 0 2.6%;
-	padding: 15vh 8.1% 0;
+	padding: 6vh 8.1% 0;
 	box-sizing: border-box;
 	border-bottom: 1px solid black;
+}
+.content--title-block {
+	height: 9vh;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	color: var(--color-first);
+}
+.content--title {
 }

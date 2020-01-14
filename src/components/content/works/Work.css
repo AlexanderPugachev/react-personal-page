@@ -1,9 +1,63 @@
 .works--work_container {
-	height: 60vh;
+	height: 40vh;
 	margin-bottom: 50px;
+	position: relative;
+	display: block;
 }
+.work--text_block {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	transform: translateY(-25%);
+	transition: all 300ms ease-in-out;
+	z-index: 3;
+	cursor: pointer;
+	filter: contrast(0) brightness(1.7);
+}
+
 .work--background {
 	height: inherit;
-	width: inherit;
+	margin: auto;
+	width: 100%;
 	position: absolute;
+	top: 0;
+	z-index: 1;
+	filter: blur(3px);
+	transition: all 300ms ease-in-out;
+}
+.work--wrapped_background {
+	height: inherit;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	opacity: .7;
+	transition: all 300ms ease-in-out;
+}
+.work--wrapped_background div {
+	position: absolute;
+	width: 90%;
+	height: 80%;
+	border: 1px solid black;
+	left: 50%;
+	top: 50%;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+	transition: all 300ms ease-in-out;
+}
+.works--work_container:hover .work--wrapped_background div{
+	width: 100%;
+	height: 100%;
+	border: 10px solid;
+}
+.works--work_container:hover .work--wrapped_background {
+	background-color: transparent !important;
+	opacity: 1;
+}
+.works--work_container:hover .work--background {
+	filter: none;
+}
+.works--work_container:hover .work--text_block {
+	transform: translateY(30%);
+	filter: none;
 }

@@ -29,10 +29,10 @@ class App extends React.Component {
 						<Route exact path='/'>
 							<Header scrolling={true}/>
 							<div className="App-container">
-								<Content className='href_hello' content={<FirstLook />}/>
-								<Content className='href_works' content={<Works />}/>
-								<Content className='href_skills' />
-								<Content className='href_contacts' content={<Contacts />}/>
+								<Content className='href_hello' content={<FirstLook />} title='none'/>
+								<Content className='href_works' content={<Works />} title='проекты'/>
+								<Content className='href_skills' title='навыки'/>
+								<Content className='href_contacts' content={<Contacts />} title='контакты'/>
 							</div>
 						</Route>
 						<Route path={`/`}>
