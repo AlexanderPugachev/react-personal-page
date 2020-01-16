@@ -24,9 +24,20 @@
 	font-weight: 500;
 	color: var(--color-0);
 	text-transform: uppercase;
-	transition: background-color 0.1s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .button-radio_div input:checked + label {
 	background-color: var(--color-0);
+}
+.button_prj_0 input:checked + label {
 	color: var(--color-1);
+}
+.button_prj_1 input:checked + label {
+	color: var(--color-3);
+}
+.button_prj_2 input:checked + label {
+	color: var(--color-2);
+}
+.button_prj_3 input:checked + label {
+	color: var(--color-4);
 }

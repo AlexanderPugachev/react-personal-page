@@ -9,10 +9,15 @@ class Button extends React.Component {
 	}
 
 	render() {
-		const { name, value, onClick, text } = this.props
+		const { name, value, onClick, text, id } = this.props
+
+		// const { Prj, PrjId } = this.props
+		// let color = document.getElementById('project--back')
+		// let button_color = 2
+		// color.style.backgroundColor = `var(--color-${button_color})`
 
 		return (
-			<div className={'button-radio_div ' + name}>
+			<div className={'button-radio_div ' + name + ' button' + id}>
 				<input
 					type="radio"
 					id={'radio' + value}

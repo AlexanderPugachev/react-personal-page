@@ -9,12 +9,12 @@ class Works extends React.Component {
 		return (
 			<div className="works">
 				<div className="works_column works_left">
-					<Work id={0} src='personal-page'/>
-					<Work id={2} src='react-store'/>
+					<Work id={0} clr={0} src='personal-page'/>
+					<Work id={2} clr={2} src='react-store'/>
 				</div>
 				<div className="works_column works_right">
-					<Work id={1} src='express-photo'/>
-					<Work id={3} src='future-project'/>
+					<Work id={1} clr={1} src='express-photo'/>
+					<Work id={3} clr={3} src='future-project'/>
 				</div>
 			</div>
 		);
