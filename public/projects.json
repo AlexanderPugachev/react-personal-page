@@ -7,7 +7,7 @@
 		"descr_text": "Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке.",
 		"mini_descr_text": "HTML, CSS, React, Redux",
 		"instruments": [
-			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll", "react-spring"], "Redux", "axios", "lodash"
+			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll", "react-spring"], "Redux", ["Redux Form"], "axios", "lodash"
 		],
 		"color": 1
 	},

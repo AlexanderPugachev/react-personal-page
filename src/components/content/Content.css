@@ -23,4 +23,8 @@
 	color: var(--color-first);
 }
 .content--title {
+	color: white;
+}
+.href_contacts {
+	background-color: var(--color-bgd-3);
 }

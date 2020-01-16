@@ -1,0 +1,47 @@
+.contact-form {
+	display: grid;
+	margin: 5vh 0;
+	width: 100%;
+	grid-template:
+		"name email"
+		"message message"
+		"button button";
+	gap: 40px 20px;
+	justify-items: center;
+}
+
+.grid-name {
+	grid-area: name;
+	width: 100%;
+	height: 42px;
+	line-height: 31px;
+}
+.grid-email {
+	grid-area: email;
+	width: 100%;
+	height: 42px;
+	line-height: 31px;
+}
+.grid-message {
+	grid-area: message;
+	width: 100%;
+	height: 100px;
+	line-height: 31px;
+}
+.grid-button {
+	height: 42px;
+	grid-area: button;
+}
+
+.contact-form input, textarea {
+	width: inherit;
+	line-height: inherit;
+	height: inherit;
+	border: none;
+	border-bottom: 1px solid var(--color-second);
+	background-color: transparent;
+	font-size: 16px;
+	color: var(--color-text-1);
+	font-family: var(--ubuntu);
+
+}
