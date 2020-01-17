@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic');
-
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700&display=swap&subset=cyrillic');
 
 /*  расчет ширины viewport: calc(100vw - (100vw - 100%))
 		на заметку: ширину viewport также можно получить из documemt
 		размеры разметки в viewport [5.5*13 + 2.6*13]
 		размеры разметки внутри content-container [7.3%*10 + 3.05%*10]
-
-	fonts:
-		main: 16px,
-		header: 40px,
-		list: 16px,
-		list-header: 20px
 
 	z-index:
 		0 - layout
@@ -35,10 +29,17 @@ body {
 	--color-first: #848484;
 	--color-second: #58595b;
 	--color-text-1: #f2f2f2;
+	--color-bgd-2: #f7f7f7;
 	--color-bgd-3: #383839;
 	/* fonts */
 	--montserrat: 'Montserrat', sans-serif;
 	--ubuntu: 'Ubuntu', sans-serif;
+	--comfortaa: 'Comfortaa', cursive;
+	/* font' size */
+	--font-size-main: 16px;
+	--font-size-header: 40px;
+	--font-size-list: 16px;
+	--font-size-list-header: 20px;
 }
 
 code {

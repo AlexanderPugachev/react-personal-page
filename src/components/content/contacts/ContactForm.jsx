@@ -18,16 +18,16 @@ const ContactForm = () => {
 	return (
 		<form className="contact-form" onSubmit={sendEmail}>
 			<div className="grid-name">
-				<input type="text" name="user_name" placeholder='Как к Вам обращаться*'/>
+				<input type="text" name="user_name" placeholder='Как к Вам обращаться*' required/>
 			</div>
 			<div className="grid-email">
-				<input type="email" name="user_email" placeholder='Ваш адрес электронной почты*'/>
+				<input type="email" name="user_email" placeholder='Ваш адрес электронной почты*' required/>
 			</div>
 			<div className="grid-message">
 				<textarea name="message" placeholder='Дополнительная информация' />
 			</div>
 			<div className="grid-button">
-				<input type="submit" value="Send" />
+				<input type="submit" value="Отправить" />
 			</div>
 		</form>
 	)

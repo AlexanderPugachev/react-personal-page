@@ -13,15 +13,15 @@
 	margin-bottom: 16px;
 
 	border: 1px solid var(--color-0);
-	border-radius: 3px;
+	border-radius: 2px;
 
 	background-color: rgba(255, 255, 255, 0);
 	cursor: pointer;
 	user-select: none;
 	text-align: center;
-	font-size: 14px;
-	font-family: 'Rubik', sans-serif;
-	font-weight: 500;
+	font-size: 12px;
+	font-family: var(--comfortaa);
+	font-weight: 700;
 	color: var(--color-0);
 	text-transform: uppercase;
 	transition: all 0.2s ease-in-out;

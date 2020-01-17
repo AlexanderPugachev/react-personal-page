@@ -1,7 +1,83 @@
+
 .contacts--container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	height: 85vh;
 	width: calc(7.3%*6 + 2.95%*5);
 	margin: auto;
+	grid-template: .2fr .8fr auto auto / 1fr;
+	align-items: center;
+	justify-content: space-between;
+}
+.contacts--subtitle, .contacts--footer {
+	font-family: var(--comfortaa);
+	color: var(--color-text-1);
+	font-size: var(--font-size-list-header);
+}
+.contacts--subtitle {
+	align-self: end;
+	justify-self: center;
+}
+
+.contacts--footer ul {
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+}
+.contacts--footer li {
+  margin: 0 3vmin;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.contacts--footer li > div {
+  height: 0;
+  width: 0;
+  border: 1px solid;
+  border-color: transparent;
+  align-self: left;
+  transition: border-right 300ms ease-in-out 100ms, border-color 300ms ease-out 100ms;
+}
+.contacts--footer li:hover > div {
+  border-right: 28px solid;
+  border-color: var(--color-1);
+}
+.contacts--footer a {
+  text-decoration: none;
+	color: var(--color-text-1);
+  transition: all 300ms ease-in-out 50ms;
+}
+.contacts--footer li:hover a {
+  color: var(--color-1);
+  font-weight: 700;
+}
+.footer {
+	position: relative;
+	bottom: 0;
+	display: grid;
+  box-sizing: border-box;
+  padding: 5vh 0 5vh;
+  grid-template-areas:
+    "div"
+    "text";
+	gap: 5vh;
+	justify-items: center;
+  text-align: center;
+}
+.footer div {
+  height: 0;
+  width: 0;
+  border-width: 1px 30vw 1px 3vw;
+  border-style: dashed;
+  border-color: var(--color-second);
+  align-self: left;
+  grid-area: div;
+}
+.footer p {
+  grid-area: text;
+  font-size: var(--font-size-main);
+	color: var(--color-text-1);
+	font-family: var(--montserrat);
 }
