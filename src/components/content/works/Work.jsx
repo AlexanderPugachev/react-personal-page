@@ -17,6 +17,7 @@ class Work extends React.Component {
 
 		let img_array = [ mini_one, mini_two, mini_three, mini_four ]
 		const { src, Prj, id} = this.props;
+
 		let half_name_1, half_name_2, mini_desc
 		try {
 			half_name_1 = Prj[id].half_name_1
@@ -29,8 +30,6 @@ class Work extends React.Component {
 			mini_desc = "Описание проекта"
 			console.log(error)
 		}
-
-
 
 		const render_img = img_array[id]
 
