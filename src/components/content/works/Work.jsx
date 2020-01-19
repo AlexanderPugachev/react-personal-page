@@ -36,11 +36,11 @@ class Work extends React.Component {
 		return (
 			<RouteLink to={`/` + src}>
 				<div
-					className={"works--work_container"}
+					className={"work--work_container"}
 					onClick={this.handleClick}>
 					<label className="work--text_block">
-						<h5 className="headers-of-work-font headers-font">{half_name_1}<br/>{half_name_2}</h5>
-						<p className="descr-of-work-font main-font">{mini_desc}</p>
+						<h5 className="work--text_header headers-of-work-font">{half_name_1}<br/>{half_name_2}</h5>
+						<p className="descr-of-work-font">{mini_desc}</p>
 					</label>
 					<div className="work--wrapped_background">
 						<div className='work--wrapped_background_div'></div>

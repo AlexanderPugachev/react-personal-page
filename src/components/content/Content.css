@@ -10,7 +10,7 @@
 	height: auto;
 	width: 94.6%;
 	margin: 0 2.8% 0 2.6%;
-	padding: 6vh 8.1% 0;
+	padding: 6vh 8.1% 3vh;
 	box-sizing: border-box;
 }
 .arrow-up {
@@ -37,6 +37,7 @@
 }
 .content--title {
 	color: white;
+	font-family: var(--ubuntu);
 }
 .href_contacts {
 	background-color: var(--color-bgd-3);

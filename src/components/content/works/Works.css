@@ -1,6 +1,6 @@
 .works {
 	width: 100%;
-	height: inherit;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -12,7 +12,4 @@
 .works_column a {
 	text-decoration: none;
 	color: var(--color-0)
-}
-.works_right {
-	margin-top: 70px;
 }

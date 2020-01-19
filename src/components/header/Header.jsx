@@ -25,7 +25,7 @@ class Header extends React.Component {
 			<div id='header' className="header">
 				<RouteLink to='/'>
 					<div className="header--my-name_container">
-						<h6 className='header--my-name_text headers-font'>
+						<h6 className='header--my-name_text'>
 							<b>Александр</b> Пугачев
 						</h6>
 					</div>

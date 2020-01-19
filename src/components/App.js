@@ -32,7 +32,7 @@ class App extends React.Component {
 							<div className="App-container">
 								<Content className='href_hello' content={<FirstLook />} title='none'/>
 								<Content className='href_works' content={<Works />} title='проекты'/>
-								<Content className='href_skills' content={<Skills />} title='навыки'/>
+								{/* <Content className='href_skills' content={<Skills />} title='навыки'/> */}
 								<Content className='href_contacts' content={<Contacts />} title='контакты'/>
 							</div>
 						</Route>

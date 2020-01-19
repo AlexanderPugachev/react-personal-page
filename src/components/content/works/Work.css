@@ -1,62 +1,78 @@
-.works--work_container {
-	height: 40vh;
+.work--work_container {
+	height: 408.905px;
 	margin-bottom: 50px;
 	position: relative;
-	display: block;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 1300px) {
+	.work--work_container {
+		height: 272.633px;
+	}
 }
 .work--text_block {
-	position: absolute;
-	left: 10%;
-	top: 50%;
-	transform: translateY(-25%);
+	margin-left: 5%;
+	margin-right: auto;
+	margin-top: 4%;
+	padding-left: 5%;
+	padding-right: 5%;
 	transition: all 300ms ease-in-out;
 	z-index: 3;
 	cursor: pointer;
 	filter: contrast(0) brightness(1.9);
 }
+.work--text_header {
+	margin-bottom: 5px;
+}
 .work--background {
-	height: inherit;
+	max-width: 100%;
+	height: auto;
+	display: block;
 	margin: auto;
-	width: 100%;
 	position: absolute;
 	top: 0;
+	left: 0;
 	z-index: 1;
 	filter: blur(3px);
 	transition: all 300ms ease-in-out;
 }
 .work--wrapped_background {
-	height: inherit;
 	width: 100%;
+	height: 100%;
 	position: absolute;
+	outline: 10px solid var(--color-bgd-2);
 	top: 0;
 	z-index: 2;
-	opacity: .8;
+	opacity: .85;
 	transition: all 300ms ease-in-out;
 }
 .work--wrapped_background div {
 	position: absolute;
 	width: 90%;
 	height: 80%;
-	border: 1px solid black;
+	border: 1px solid;
 	left: 50%;
 	top: 50%;
 	box-sizing: border-box;
 	transform: translate(-50%, -50%);
 	transition: all 300ms ease-in-out;
 }
-.works--work_container:hover .work--wrapped_background div{
-	width: 100%;
-	height: 100%;
+.work--work_container:hover .work--wrapped_background div {
+	width: 99.5%;
+	height: 99.5%;
+	box-sizing: content-box;
 	border: 10px solid;
 }
-.works--work_container:hover .work--wrapped_background {
+.work--work_container:hover .work--wrapped_background {
 	background-color: transparent !important;
 	opacity: 1;
 }
-.works--work_container:hover .work--background {
+.work--work_container:hover .work--background {
 	filter: none;
 }
-.works--work_container:hover .work--text_block {
-	transform: translateY(30%);
+.work--work_container:hover .work--text_block {
 	filter: none;
+	margin-top: 40%;
+	text-shadow: white 0 0 1px;
 }

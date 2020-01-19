@@ -22,46 +22,56 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	/* colors: */
 	--color-0: rgba(255, 255, 255, 0.8);
-	--color-1: #B50837;
-	--color-2: #4b9b56; /* fb8b24    */
-	--color-3: #731dd8;
-	--color-4: #ff8552;
+	--color-3: #B50837;
+	--color-4: #4b9b56; /* fb8b24    */
+	--color-1: #731dd8;
+	--color-2: #ff8552;
 	--color-first: #848484;
 	--color-second: #58595b;
 	--color-text-1: #f2f2f2;
 	--color-bgd-2: #f7f7f7;
 	--color-bgd-3: #383839;
-	/* fonts */
+	/* font-family */
 	--montserrat: 'Montserrat', sans-serif;
 	--ubuntu: 'Ubuntu', sans-serif;
 	--comfortaa: 'Comfortaa', cursive;
-	/* font' size */
+	/* font-size */
 	--font-size-main: 16px;
 	--font-size-header: 40px;
 	--font-size-list: 16px;
 	--font-size-list-header: 20px;
+	/* line-height */
+	--line-height-header: 44px;
+	--line-height-list-header: 24px;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media (max-width: 1300px) {
+	body {
+		/* font-size */
+		--font-size-main: 16px;
+		--font-size-header: 28px;
+		--font-size-list: 16px;
+		--font-size-list-header: 15px;
+		/* line-height */
+		--line-height-header: 29px;
+		--line-height-list-header: 16px;
+	}
+}
+
 .headers-of-work-font {
 	font-family: var(--montserrat);
-	font-size: 38px;
+	font-size: var(--font-size-header);
 	font-weight: 600;
 	text-transform: uppercase;
-	line-height: 44px;
+	line-height: var(--line-height-header);
 }
 .descr-of-work-font {
 	font-family: var(--ubuntu);
-	font-size: 20px;
-	line-height: 24px;
+	font-size: var(--font-size-list-header);
+	line-height: var(--line-height-list-header);
 	font-weight: 400;
-}
-.color-first {
-	color: #848484;
-}
-.color-second {
-	color: #111;
 }

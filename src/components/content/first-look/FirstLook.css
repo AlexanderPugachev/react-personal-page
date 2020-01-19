@@ -8,12 +8,13 @@
 
 }
 .first-look--text_subtitle {
-	color: #848484;
+	font-size: var(--font-size-main);
+	color: var(--color-first);
 }
 .first-look--text_title {
 	font-size: 10vh;
 	font-weight: 400;
-	color: #848484;
+	color: var(--color-first);
 }
 .first-look--text_postfix {
 	text-transform: uppercase;
@@ -51,8 +52,7 @@
 	position: relative;
 	height: 30px;
 	width: 30px;
-	box-shadow: 5px 5px #848484;
-	/* background-color: darkred; */
+	box-shadow: 5px 5px var(--color-first);
 }
 .arrow--down_first {
 	animation: 3s ease-out 0s infinite arrow--down_first;
