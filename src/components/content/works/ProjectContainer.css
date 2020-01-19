@@ -7,18 +7,12 @@
 	z-index: 1;
 	color: white;
 }
-.project--descr_name {
-	font-size: 38px;
-	font-weight: 600;
-	text-transform: uppercase;
-	line-height: 44px;
-	margin-bottom: 30px;
-}
 .project--descr_text {
 	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 15px;
 	color: var(--color-0);
+	font-family: var(--ubuntu);
+	margin-bottom: 15px;
+	line-height: 20px;
 }
 .project--descr_grid {
 	display: grid;
@@ -33,9 +27,9 @@
 }
 .project--grid_list {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 16px;
 	color: var(--color-0);
+	margin-bottom: 0;
 }
 .project--instruments li {
 	margin: 0 0 5px 25px;
@@ -44,10 +38,11 @@
 	margin: 0 0 5px 35px;
 }
 .project--view {
+	font-family: var(--ubuntu);
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: start;
 	height: calc(100% - 30px); /* header's line-height + margin-bottom */
 	margin: 2px 0 0 10px;
 }

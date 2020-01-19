@@ -10,7 +10,7 @@ const Content = ({className, content, title}) => {
 				{
 					title !== 'none' &&
 					  <div className="content--title-block">
-							<h5 className="content--title headers-font headers-of-work-font">{title}</h5>
+							<h5 className="content--title headers-of-work-font">{title}</h5>
 							<div className='arrow-up'>
 								<Link
 									className='Link'

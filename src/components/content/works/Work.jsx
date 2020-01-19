@@ -5,7 +5,7 @@ import { Link as RouteLink } from 'react-router-dom';
 import mini_one from '../../../img/personal-page_mini.png';
 import mini_two from '../../../img/express-photo_mini.png';
 import mini_three from '../../../img/project-one_mini.png';
-import mini_four from '../../../img/project-one_mini.png';
+import mini_four from '../../../img/project-two_mini.png';
 
 class Work extends React.Component {
 	constructor(props) {

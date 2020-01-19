@@ -45,12 +45,12 @@ class ProjectContainer extends React.Component {
 		return (
 			<div className="project">
 				<div className="project--description">
-					<h5 className="project--descr_name headers-font">{Prj[PrjId].half_name_1 + ' ' + Prj[PrjId].half_name_2}</h5>
-					<p className="project--descr_text main-font">{Prj[PrjId].descr_text}</p>
+					<h5 className="project--descr_name headers-of-work-font">{Prj[PrjId].half_name_1 + ' ' + Prj[PrjId].half_name_2}</h5>
+					<p className="project--descr_text">{Prj[PrjId].descr_text}</p>
 					<div className="project--descr_grid">
 						<div className="grid_left">
-							<h6 className="project--grid_header headers-font">Инструменты:</h6>
-							<ul className='project--grid_list project--instruments main-font'>
+							<h6 className="project--grid_header headers-of-work-font">Инструменты:</h6>
+							<ul className='project--grid_list project--instruments descr-of-work-font'>
 								{Prj[PrjId].instruments.map((item, key) => {
 									if (typeof item !== 'object') {
 										return <li key={key}> {item} </li>
@@ -64,7 +64,7 @@ class ProjectContainer extends React.Component {
 						</div>
 						<div className="grid_right">
 							<h6 className='project--grid_header headers-font'>Разрешение:</h6>
-							<form className="project--grid_list project--view main-font">
+							<form className="project--grid_list project--view">
 								<Button name="view_button" id={'_prj_' + PrjId} value={0} onClick={this.handleClick} text='HD'/>
 								<Button name="view_button" id={'_prj_' + PrjId} value={1} onClick={this.handleClick} text='Full HD'/>
 								<Button name="view_button" id={'_prj_' + PrjId} value={2} onClick={this.handleClick} text='mobile'/>

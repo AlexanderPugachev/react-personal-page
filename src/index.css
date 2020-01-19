@@ -46,27 +46,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.main-font {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-}
-.headers-font {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-}
 .headers-of-work-font {
+	font-family: var(--montserrat);
 	font-size: 38px;
 	font-weight: 600;
 	text-transform: uppercase;
 	line-height: 44px;
-	margin-bottom: 30px;
 }
 .descr-of-work-font {
+	font-family: var(--ubuntu);
 	font-size: 20px;
 	line-height: 24px;
-	margin-bottom: 15px;
+	font-weight: 400;
 }
 .color-first {
 	color: #848484;

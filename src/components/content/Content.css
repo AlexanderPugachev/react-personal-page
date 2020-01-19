@@ -41,6 +41,10 @@
 .href_contacts {
 	background-color: var(--color-bgd-3);
 }
+
 .href_works {
 	background-color: var(--color-bgd-2);
+}
+.href_works .content--title {
+	color: var(--color-second);
 }

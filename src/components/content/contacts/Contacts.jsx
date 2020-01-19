@@ -17,15 +17,15 @@ class Contacts extends React.Component {
 						<ul>
 							<li>
 								<div></div>
-								<a href="mailto:al.pugachev96@gmail.com" target="_blank">Gmail</a>
+								<a href="mailto:al.pugachev96@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a>
 							</li>
 							<li>
 								<div></div>
-								<a href="https://www.freecodecamp.org/alexanderpugachev" target="_blank">FreeCodeCamp</a>
+								<a href="https://www.freecodecamp.org/alexanderpugachev" target="_blank" rel="noopener noreferrer">FreeCodeCamp</a>
 							</li>
 							<li>
 								<div></div>
-								<a href="https://github.com/AlexanderPugachev" target="_blank">Github</a>
+								<a href="https://github.com/AlexanderPugachev" target="_blank" rel="noopener noreferrer">Github</a>
 							</li>
 						</ul>
 					</div>

@@ -7,7 +7,7 @@
 		"descr_text": "Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке.",
 		"mini_descr_text": "HTML, CSS, React, Redux",
 		"instruments": [
-			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll", "react-spring"], "Redux", ["Redux Form"], "axios", "lodash"
+			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll", "react-spring"], "Redux", ["Redux Form"], "Visual Studio Code", "axios", "lodash"
 		],
 		"color": 1
 	},
@@ -19,7 +19,7 @@
 		"descr_text": "При разработке был использован фирменный цвет компании. С первого взгляда потенциальные клиенты видят результат - примеры фотографий, снятых фоотобудкой на предыдущих мероприятиях. БЛЯ бла БЛЯ. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке.",
 		"mini_descr_text": "HTML, CSS",
 		"instruments": [
-			"HTML", "CSS"
+			"HTML", "CSS", "Visual Studio Code"
 		],
 		"color": 3
 	},
@@ -31,19 +31,19 @@
 		"descr_text": "Реализована фильтрация выдачи по заданным характеристикам товара. ... С первого взгляда потенциальные клиенты видят результат - примеры фотографий, снятых фоотобудкой на предыдущих мероприятиях. БЛЯ бла БЛЯ. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке.",
 		"mini_descr_text": "HTML, CSS, React, Redux",
 		"instruments": [
-			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll"], "any other instruments"
+			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll"], "Visual Studio Code", "any other instruments"
 		],
 		"color": 2
 	},
 	{
 		"id": 3,
-		"path": "future-project",
-		"half_name_1": "Future",
-		"half_name_2": "project",
+		"path": "blog-engine",
+		"half_name_1": "Blog",
+		"half_name_2": "engine",
 		"descr_text": "Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект. Помогу вам создать проект.",
-		"mini_descr_text": "HTML, CSS, React, Redux",
+		"mini_descr_text": "HTML, Bootstrap, Python, Django",
 		"instruments": [
-			"HTML", "CSS", "ReactJS", "Redux", "любые необходимые инструменты и библиотеки"
+			"HTML", "CSS", "Bootstrap", "Python", "Django", "Visual Studio Code"
 		],
 		"color": 4
 	}
