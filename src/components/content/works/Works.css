@@ -13,3 +13,11 @@
 	text-decoration: none;
 	color: var(--color-0)
 }
+@media (max-width: 576px) {
+	.works {
+		flex-direction: column;
+	}
+	.works_column {
+		width: calc(7.3%*10 + 2.95%*9);
+	}
+}

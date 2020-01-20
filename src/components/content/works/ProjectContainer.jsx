@@ -63,7 +63,7 @@ class ProjectContainer extends React.Component {
 							</ul>
 						</div>
 						<div className="grid_right">
-							<h6 className='project--grid_header headers-font'>Разрешение:</h6>
+							<h6 className='project--grid_header headers-of-work-font'>Разрешение:</h6>
 							<form className="project--grid_list project--view">
 								<Button name="view_button" id={'_prj_' + PrjId} value={0} onClick={this.handleClick} text='HD'/>
 								<Button name="view_button" id={'_prj_' + PrjId} value={1} onClick={this.handleClick} text='Full HD'/>
@@ -94,6 +94,7 @@ class ProjectContainer extends React.Component {
 		event.target.value !== '2'
 		? (img.classList.add('img-full')) || (img.classList.remove('img-mobile'))
 		: (img.classList.add('img-mobile')) || (img.classList.remove('img-full'))
+		window.scrollTo(0, 0);
 	}
 
 	// animationImage добавляет скрин-блоку новый класс "img-animation",

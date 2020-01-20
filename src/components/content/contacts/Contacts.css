@@ -1,4 +1,3 @@
-
 .contacts--container {
 	display: grid;
 	height: 85vh;
@@ -7,6 +6,12 @@
 	grid-template: .2fr .8fr auto auto / 1fr;
 	align-items: center;
 	justify-content: space-between;
+}
+@media (max-width: 576px) {
+	.contacts--container {
+		width: calc(7.3%*10 + 2.95%*9);
+		grid-template: .15fr .85fr auto auto / 1fr;
+	}
 }
 .contacts--subtitle, .contacts--footer {
 	font-family: var(--comfortaa);
@@ -28,7 +33,7 @@
   margin: 0 3vmin;
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 10px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -58,13 +63,19 @@
 	bottom: 0;
 	display: grid;
   box-sizing: border-box;
-  padding: 5vh 0 5vh;
+  padding: 5vh 0;
   grid-template-areas:
     "div"
     "text";
 	gap: 5vh;
 	justify-items: center;
   text-align: center;
+}
+@media (max-width: 1400px) {
+	.footer {
+		gap: 3vh;
+		padding: 3vh 0;
+	}
 }
 /* ваа */
 .footer div {

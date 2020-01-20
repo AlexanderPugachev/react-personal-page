@@ -41,6 +41,7 @@ body {
 	--font-size-list: 16px;
 	--font-size-list-header: 20px;
 	/* line-height */
+	--line-height-main: 20px;
 	--line-height-header: 44px;
 	--line-height-list-header: 24px;
 }
@@ -49,19 +50,45 @@ code {
     monospace;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
 	body {
 		/* font-size */
-		--font-size-main: 16px;
+		--font-size-main: 14px;
 		--font-size-header: 28px;
 		--font-size-list: 16px;
 		--font-size-list-header: 15px;
 		/* line-height */
+		--line-height-main: 18px;
 		--line-height-header: 29px;
 		--line-height-list-header: 16px;
 	}
+	@media (max-width: 1300px) {
+		body {
+			/* font-size */
+			--font-size-main: 13px;
+			--font-size-header: 25px;
+			--font-size-list: 16px;
+			--font-size-list-header: 15px;
+			/* line-height */
+			--line-height-main: 16px;
+			--line-height-header: 27px;
+			--line-height-list-header: 16px;
+		}
+	}
 }
-
+@media (max-width: 576px) {
+	body {
+		/* font-size */
+		--font-size-main: 14px;
+		--font-size-header: 25px;
+		--font-size-list: 16px;
+		--font-size-list-header: 15px;
+		/* line-height */
+		--line-height-main: 16px;
+		--line-height-header: 27px;
+		--line-height-list-header: 16px;
+	}
+}
 .headers-of-work-font {
 	font-family: var(--montserrat);
 	font-size: var(--font-size-header);

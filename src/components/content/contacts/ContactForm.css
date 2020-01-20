@@ -10,7 +10,11 @@
 	gap: 40px 20px;
 	justify-items: center;
 }
-
+@media (max-width: 1400px) {
+	.contact-form {
+		gap: 20px;
+	}
+}
 .grid-name {
 	grid-area: name;
 	width: 100%;
@@ -29,8 +33,21 @@
 	height: 100px;
 	line-height: 31px;
 }
-
-
+@media (max-width: 576px) {
+	.contact-form {
+		grid-template:
+			"name name"
+			"email email"
+			"message message"
+			"button button";
+	}
+	.contact-form input {
+		line-height: 20px;
+	}
+	.grid-message {
+		line-height: 20px;
+	}
+}
 .contact-form input, textarea {
 	width: inherit;
 	line-height: inherit;
@@ -38,19 +55,13 @@
 	border: none;
 	border-bottom: 1px solid var(--color-second);
 	background-color: transparent;
-	font-size: 16px;
+	font-size: var(--font-size-main);
 	color: var(--color-text-1);
 	font-family: var(--ubuntu);
 }
 .contact-form input:focus, textarea:focus {
 	outline: none;
 }
-/* .contact-form input:invalid {
-	box-shadow: 0 1px 0 var(--color-1);
-}
-.contact-form input:focus {
-	box-shadow: none;
-} */
 .grid-button, .grid-button input {
 	height: 42px;
 	grid-area: button;

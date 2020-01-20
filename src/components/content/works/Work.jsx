@@ -11,26 +11,23 @@ class Work extends React.Component {
 	constructor(props) {
 		super(props)
 		this.handleClick = this.handleClick.bind(this)
+		this.getViewport = this.getViewport.bind(this)
 	}
 
 	render() {
 
 		let img_array = [ mini_one, mini_two, mini_three, mini_four ]
 		const { src, Prj, id} = this.props;
-
 		let half_name_1, half_name_2, mini_desc
 		try {
 			half_name_1 = Prj[id].half_name_1
 			half_name_2 = Prj[id].half_name_2
 			mini_desc = Prj[id].mini_descr_text
-			console.log('данные подгружены')
 		} catch (error) {
 			half_name_1 = "Название"
 			half_name_2 = "проекта"
 			mini_desc = "Описание проекта"
-			console.log(error)
 		}
-
 		const render_img = img_array[id]
 
 		return (
@@ -57,9 +54,11 @@ class Work extends React.Component {
 	handleClick() {
 		const { chooseWork, id } = this.props
 		chooseWork(id)
+		window.scrollTo(0, 0);
 	}
 
 	componentDidMount() {
+		this.getViewport();
 		// данный код раскрашивает каждый блок в индивидуальные цвета
 		let background_clr = document.getElementsByClassName('work--wrapped_background')
 		let background_clr_div = document.getElementsByClassName('work--wrapped_background_div')
@@ -80,6 +79,43 @@ class Work extends React.Component {
 			item.style.color = `var(--color-${clr})`
 			clr += 1	}
 		clr = 1
+	}
+	componentDidUpdate() {
+		this.getViewport()
+	}
+
+	getViewport() {
+		let height = window.innerHeight;
+		let width = window.innerWidth;
+		if (width <= 576) {
+			let aspect_ratio = height / width;
+			let current_ratio =
+				aspect_ratio >= 1.9 ? 0 :
+				aspect_ratio >= 1.6 ? 1 :
+				aspect_ratio >= 1.5 ? 2 :
+				aspect_ratio >= 1.3 ? 3 : 4;
+			let work_container = document.getElementsByClassName('work--work_container')
+			switch (current_ratio) {
+				case 0:
+					for (let item of work_container) {
+						item.style.height = '23vh';}
+					break;
+				case 1:
+					for (let item of work_container) {
+						item.style.height = '28vh';}
+					break;
+				case 2:
+					for (let item of work_container) {
+						item.style.height = '30vh';}
+					break;
+				case 3:
+					for (let item of work_container) {
+						item.style.height = '33vh';}
+					break;
+				default:
+					break;
+			}
+		}
 
 	}
 

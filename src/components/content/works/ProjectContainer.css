@@ -11,25 +11,25 @@
 	margin-bottom: 10px;
 }
 .project--descr_text {
-	font-size: 16px;
+	font-size: var(--font-size-main);
 	color: var(--color-0);
 	font-family: var(--ubuntu);
 	margin-bottom: 45px;
-	line-height: 20px;
+	line-height: var(--line-height-main);
 }
 .project--descr_grid {
 	display: grid;
 	grid: 1fr / 4fr 3fr
 }
 .project--grid_header {
-	font-size: 16px;
+	font-size: var(--font-size-list-header);
 	font-weight: 600;
-	line-height: 22px;
+	line-height: var(--line-height-main);
 	text-transform: uppercase;
 	margin-bottom: 8px;
 }
 .project--grid_list {
-	font-size: 16px;
+	font-size: var(--font-size-main);
 	line-height: 16px;
 	color: var(--color-0);
 	margin-bottom: 0;
@@ -40,17 +40,40 @@
 .project--grid_inner-list li {
 	margin: 0 0 5px 35px;
 }
+
 .project--view {
 	font-family: var(--ubuntu);
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: flex-start;
 	height: calc(100% - 30px); /* header's line-height + margin-bottom */
 	margin: 2px 0 0 10px;
 }
 .view_button label {
 	width: 92px;
+}
+.view_button:first-child label {
+	margin-top: 3px;
+}
+@media (max-width: 1400px) {
+	.project--description {
+		width: 22%;
+	}
+	.project--descr_name {
+		margin-bottom: 5px;
+	}
+	.project--descr_text {
+		margin-bottom: 15px;
+	}
+	.project--instruments li {
+		margin-bottom: 2px;
+	}
+	.view_button label {
+		width: 76px;
+	}
+	@media (max-width: 1300px) {
+	}
 }
 .project--image-full {
 	position: absolute;
@@ -94,6 +117,28 @@
 		margin-right: 0;
 		/* right: 10.7%; */
   }
+}
+
+@media (max-width: 576px) {
+	.project--description {
+		position: relative;
+		top: 0;
+		left: 7.3%;
+		width: 83.7%;
+		margin: 14vh 0 5vh;
+	}
+	.project--descr_name {
+		margin-bottom: 20px;
+	}
+	.project--image-full {
+		position: relative;
+		width: 83.7%;
+		height: auto;
+		padding-bottom: 12vh;
+		top: 0;
+		left: 7.3%;
+		z-index: 1;
+	}
 }
 .project--background {
 	position: fixed;

@@ -9,7 +9,7 @@ import FirstLook from './content/first-look/FirstLook';
 import Works from './content/works/Works';
 import Contacts from './content/contacts/Contacts';
 import Header from './header/Header';
-import Skills from './content/skills/Skills';
+// import Skills from './content/skills/Skills';
 // containers below
 import LoadableProjectContainer from '../containers/content/ProjectWrapper';
 

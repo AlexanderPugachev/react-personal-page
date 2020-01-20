@@ -26,6 +26,15 @@
 	width: 29px;
 	height: 11px;
 }
+@media (max-width: 576px) {
+	.content-container {
+		padding: 6vh 5.1% 3vh;
+	}
+	.arrow-up {
+		right: calc(5.5%*1 + 2.6%*2);
+		height: 29px;
+	}
+}
 .content--title-block {
 	height: 9vh;
 	width: auto;
@@ -41,6 +50,9 @@
 }
 .href_contacts {
 	background-color: var(--color-bgd-3);
+}
+.href_contacts > .content-container {
+	padding-bottom: 0;
 }
 
 .href_works {

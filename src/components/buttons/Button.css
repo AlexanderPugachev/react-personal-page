@@ -26,6 +26,14 @@
 	text-transform: uppercase;
 	transition: all 0.2s ease-in-out;
 }
+@media (max-width: 1400px) {
+	.button-radio_div label {
+		font-size: 10px;
+		padding: 8px 13px;
+		height: 29px;
+		min-width: 51px;
+	}
+}
 .button-radio_div input:checked + label {
 	background-color: var(--color-0);
 }
