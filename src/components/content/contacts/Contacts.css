@@ -37,26 +37,14 @@
   justify-content: center;
   align-items: center;
 }
-.contacts--footer li > div {
-  height: 0;
-  width: 0;
-  border: 1px solid;
-  border-color: transparent;
-  align-self: left;
-  transition: border-right 300ms ease-in-out 100ms, border-color 300ms ease-out 100ms;
-}
-.contacts--footer li:hover > div {
-  border-right: 28px solid;
-  border-color: var(--color-1);
-}
 .contacts--footer a {
-  text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: transparent;
 	color: var(--color-text-1);
   transition: all 300ms ease-in-out 50ms;
 }
 .contacts--footer li:hover a {
-  color: var(--color-1);
-  font-weight: 700;
+	text-decoration-color: var(--color-bgd-2);
 }
 .footer {
 	position: relative;

@@ -17,6 +17,11 @@
 		}
 	}
 }
+@media (min-width: 2000px) {
+	.work--work_container {
+		height: 41vh;
+	}
+}
 .work--text_block {
 	margin-left: 5%;
 	margin-right: auto;

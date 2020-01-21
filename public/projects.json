@@ -31,7 +31,7 @@
 		"descr_text": "Реализована фильтрация выдачи по заданным характеристикам товара. ... С первого взгляда потенциальные клиенты видят результат - примеры фотографий, снятых фоотобудкой на предыдущих мероприятиях. Данный сайт был написан мной с целью демонстрации моих навыков и инструментов, которые я использую в веб-разработке.",
 		"mini_descr_text": "HTML, CSS, React, Redux",
 		"instruments": [
-			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll"], "Visual Studio Code", "any other instruments"
+			"HTML", "CSS", "ReactJS", ["react-router", "react-scroll"], "Visual Studio Code"
 		],
 		"color": 2
 	},
