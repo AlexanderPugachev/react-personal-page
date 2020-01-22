@@ -6,7 +6,8 @@
 	grid-template:
 		"name email"
 		"message message"
-		"button button";
+		"button button"
+		"error error";
 	gap: 40px 20px;
 	justify-items: center;
 }
@@ -14,6 +15,25 @@
 	.contact-form {
 		gap: 20px;
 	}
+}
+.contact-form_error, .contact-form_result {
+	font-family: var(--ubuntu);
+	font-size: var(--font-size-main);
+	line-height: var(--line-height-main);
+	color: var(--color-text-3);
+	height: 42px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact-form_error {
+	grid-area: error;
+	background-color: lightcoral;
+}
+.contact-form_result {
+	background-color: lightgreen;
 }
 .grid-name {
 	grid-area: name;
@@ -39,7 +59,8 @@
 			"name name"
 			"email email"
 			"message message"
-			"button button";
+			"button button"
+			"error error";
 	}
 	.contact-form input {
 		line-height: 20px;
@@ -82,4 +103,7 @@
 }
 .grid-button input:active {
 	background-color: var(--color-text-1);
+}
+.grid-button input:focus {
+	border-bottom-color: var(--color-bgd-3);
 }
