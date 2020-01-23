@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
 	sendEmail(e) {
 		e.preventDefault();
 
-		emailjs.sendForm('contact_service', 'template_1fodUhug', e.target, 'user_8LOVz3hSMpsufKBJ1Iz4iw')
+		emailjs.sendForm('contact_service', 'template_1fodUhug', e.target, 'user_8LOVz3hSMpsufKBJ1Iz4i')
 			.then((result) => {
 				console.log('success ', result.status, result.text);
 				this.setState({ result: true, error: false })
