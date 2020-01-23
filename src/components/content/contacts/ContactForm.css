@@ -20,20 +20,23 @@
 	font-family: var(--ubuntu);
 	font-size: var(--font-size-main);
 	line-height: var(--line-height-main);
-	color: var(--color-text-3);
+	color: var(--color-0);
 	height: 42px;
 	width: 100%;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: all 300ms ease-in-out;
+	opacity: .75;
 }
 .contact-form_error {
 	grid-area: error;
-	background-color: lightcoral;
+	background-color: #ed7b84;
 }
 .contact-form_result {
-	background-color: lightgreen;
+	grid-area: button;
+	background-color: var(--color-4);
 }
 .grid-name {
 	grid-area: name;
@@ -48,6 +51,7 @@
 	line-height: 31px;
 }
 .grid-message {
+	box-sizing: border-box;
 	grid-area: message;
 	width: 100%;
 	height: 100px;
