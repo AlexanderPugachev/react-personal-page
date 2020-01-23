@@ -18,16 +18,16 @@ class ContactForm extends React.Component {
 				{!this.state.result &&
 					<form className="contact-form" onSubmit={this.sendEmail}>
 						<div className="grid-name">
-							<input type="text" name="user_name" placeholder='Как к Вам обращаться*' required/>
+							<input type="text" name="user_name" placeholder='Как к Вам обращаться*' required />
 						</div>
 						<div className="grid-email">
-							<input type="email" name="user_email" placeholder='Ваш адрес электронной почты*' required/>
+							<input type="email" name="user_email" placeholder='Ваш адрес электронной почты*' required />
 						</div>
 						<div className="grid-message">
 							<textarea name="message" placeholder='Дополнительная информация' />
 						</div>
 						<div className="grid-button">
-							<input type="submit" value="Отправить"/>
+							<input type="submit" value="Отправить" />
 						</div>
 						{this.state.error &&
 							<div className="contact-form_error">
@@ -51,13 +51,12 @@ class ContactForm extends React.Component {
 		emailjs.sendForm('contact_service', 'template_1fodUhug', e.target, 'user_8LOVz3hSMpsufKBJ1Iz4iц')
 			.then((result) => {
 				console.log('success ', result.status, result.text);
-				this.setState({result: true, error: false})
+				this.setState({ result: true, error: false })
 			}, (error) => {
 				console.log('failed ', error.text);
-				this.setState({result: false, error: true})
+				this.setState({ result: false, error: true })
 			});
 	}
-
 }
 
 export default ContactForm

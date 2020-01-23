@@ -15,7 +15,6 @@ class Work extends React.Component {
 	}
 
 	render() {
-
 		let img_array = [ mini_one, mini_two, mini_three, mini_four ]
 		const { src, Prj, id} = this.props;
 		let half_name_1, half_name_2, mini_desc
@@ -60,30 +59,38 @@ class Work extends React.Component {
 	componentDidMount() {
 		this.getViewport();
 		// данный код раскрашивает каждый блок в индивидуальные цвета
-		let background_clr = document.getElementsByClassName('work--wrapped_background')
-		let background_clr_div = document.getElementsByClassName('work--wrapped_background_div')
-		let work_text_clr = document.getElementsByClassName('work--text_block')
-		let clr = 1
+		const coloring = () => {
+			let background_clr = document.getElementsByClassName('work--wrapped_background')
+			let background_clr_div = document.getElementsByClassName('work--wrapped_background_div')
+			let work_text_clr = document.getElementsByClassName('work--text_block')
+			let clr = 1
 
-		for (let item of background_clr) {
-			item.style.backgroundColor = `var(--color-${clr})`
-			clr += 1 }
-		clr = 1
+			for (let item of background_clr) {
+				item.style.backgroundColor = `var(--color-${clr})`
+				clr += 1
+			}
+			clr = 1
 
-		for (let item of background_clr_div) {
-			item.style.borderColor = `var(--color-${clr})`
-			clr += 1 }
-		clr = 1
+			for (let item of background_clr_div) {
+				item.style.borderColor = `var(--color-${clr})`
+				clr += 1
+			}
+			clr = 1
 
-		for (let item of work_text_clr) {
-			item.style.color = `var(--color-${clr})`
-			clr += 1	}
-		clr = 1
+			for (let item of work_text_clr) {
+				item.style.color = `var(--color-${clr})`
+				clr += 1
+			}
+			clr = 1
+		}
+		coloring()
 	}
+
 	componentDidUpdate() {
 		this.getViewport()
 	}
 
+	// different params for mobile devices
 	getViewport() {
 		let height = window.innerHeight;
 		let width = window.innerWidth;
@@ -116,7 +123,6 @@ class Work extends React.Component {
 					break;
 			}
 		}
-
 	}
 
 }

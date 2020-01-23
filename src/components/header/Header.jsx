@@ -13,7 +13,7 @@ class Header extends React.Component {
 			prevScrollValue: 0
 		}
 		this.Listener = this.Listener.bind(this);
-		this.trottledListener = throttle(this.Listener, 1000);
+		this.trottledListener = throttle(this.Listener, 500);
 	}
 
 	componentDidMount() {
