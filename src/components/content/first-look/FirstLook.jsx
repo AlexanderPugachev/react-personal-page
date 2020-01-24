@@ -10,10 +10,10 @@ const FirstLook = () => {
 					Привет! Меня зовут
 				</h3>
 				<h1 className="first-look--text_title">
-					Александр Пугачев
+					<b>Александр</b> Пугачев
 				</h1>
 				<h1 className='first-look--text_postfix'>
-					Веб-разработчик
+					<p className='i-am'>I'm a&nbsp;</p><p> WEB&nbsp;</p><p> DEVELOPER</p>
 				</h1>
 			</div>
 			<div className="first-look--arrow-container">

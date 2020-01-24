@@ -1,5 +1,5 @@
 .work--work_container {
-	height: 408.905px;
+	height: 405px;
 	margin-bottom: 50px;
 	position: relative;
 	display: flex;
@@ -90,7 +90,7 @@
 	}
 	.work--work_container:hover .work--text_block {
 		filter: none;
-		margin-top: 40%;
+		margin-top: 35%;
 		text-shadow: white 0 0 1px;
 	}
 }

@@ -1,113 +1,120 @@
 .contact-form {
-	align-self: start;
-	margin-top: 4vh;
-	display: grid;
-	width: 100%;
-	grid-template:
-		"name email"
-		"message message"
-		"button button"
-		"error error";
-	gap: 40px 20px;
-	justify-items: center;
+  align-self: start;
+  margin-top: 4vh;
+  display: grid;
+  width: 100%;
+  grid-template:
+    "name email"
+    "message message"
+    "button button"
+    "error error";
+  gap: 40px 20px;
+  justify-items: center;
 }
 @media (max-width: 1400px) {
-	.contact-form {
-		gap: 20px;
-	}
+  .contact-form {
+    gap: 20px;
+  }
 }
-.contact-form_error, .contact-form_result {
-	font-family: var(--ubuntu);
-	font-size: var(--font-size-main);
-	line-height: var(--line-height-main);
-	color: var(--color-0);
-	height: 42px;
-	width: 100%;
-	display: none;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transition: all 300ms ease-in-out;
-	opacity: .75;
+.contact-form_error,
+.contact-form_result {
+  font-family: var(--ubuntu);
+  font-size: var(--font-size-main);
+  line-height: var(--line-height-main);
+  color: var(--color-0);
+  height: 42px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+  opacity: 0.75;
 }
 .contact-form_error {
-	grid-area: error;
-	background-color: #ed7b84;
+  grid-area: error;
+  background-color: #ed7b84;
 }
 .contact-form_result {
-	grid-area: button;
-	background-color: var(--color-4);
+  grid-area: button;
+  background-color: var(--color-4);
 }
 .grid-name {
-	grid-area: name;
-	width: 100%;
-	height: 42px;
-	line-height: 31px;
+  grid-area: name;
+  width: 100%;
+  height: 42px;
+  line-height: 31px;
+  box-sizing: border-box;
 }
 .grid-email {
-	grid-area: email;
-	width: 100%;
-	height: 42px;
-	line-height: 31px;
+  grid-area: email;
+  width: 100%;
+  height: 42px;
+  line-height: 31px;
+  box-sizing: border-box;
 }
 .grid-message {
-	box-sizing: border-box;
-	grid-area: message;
-	width: 100%;
-	height: 100px;
-	line-height: 31px;
+  box-sizing: border-box;
+  grid-area: message;
+  width: 100%;
+  height: 100px;
+  line-height: 31px;
 }
 @media (max-width: 576px) {
-	.contact-form {
-		grid-template:
-			"name name"
-			"email email"
-			"message message"
-			"button button"
-			"error error";
-	}
-	.contact-form input {
-		line-height: 20px;
-	}
-	.grid-message {
-		line-height: 20px;
-	}
+  .contact-form {
+    grid-template:
+      "name name"
+      "email email"
+      "message message"
+      "button button"
+      "error error";
+  }
+  .contact-form input {
+    line-height: 20px;
+  }
+  .grid-message {
+    line-height: 20px;
+  }
 }
-.contact-form input, textarea {
-	width: inherit;
-	line-height: inherit;
-	height: inherit;
-	border: none;
-	border-bottom: 1px solid var(--color-second);
-	background-color: transparent;
-	font-size: var(--font-size-main);
-	color: var(--color-text-1);
-	font-family: var(--ubuntu);
-	transition: all 300ms ease-in-out;
+.contact-form input,
+textarea {
+  width: inherit;
+  line-height: inherit;
+  height: inherit;
+  border: none;
+  border-bottom: 1px solid var(--color-second);
+  background-color: transparent;
+  font-size: var(--font-size-main);
+  color: var(--color-text-1);
+  font-family: var(--ubuntu);
+  transition: all 300ms ease-in-out;
 }
-.contact-form input:focus, textarea:focus {
-	outline: none;
-	border-bottom-color: var(--color-bgd-2);
+.contact-form input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: var(--color-bgd-2);
 }
-.grid-button, .grid-button input {
-	height: 42px;
-	grid-area: button;
-	border: 1px solid var(--color-second);
-	border-radius: 1px;
-	box-sizing: border-box;
-	font-family: var(--montserrat);
-	color: var(--color-first);
-	cursor: pointer;
-	transition: all 300ms ease-in-out;
+.grid-button,
+.grid-button input {
+  height: 42px;
+  grid-area: button;
+  border: 1px solid var(--color-second);
+  border-radius: 1px;
+  box-sizing: border-box;
+  font-family: var(--montserrat);
+  color: var(--color-first);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
-.grid-button:hover, .grid-button input:hover {
-	/* background-color: var(--color-1); */
-	color: var(--color-text-1);
-	border: 1px solid var(--color-text-1);
+.grid-button:hover,
+.grid-button input:hover {
+  /* background-color: var(--color-1); */
+  color: var(--color-text-1);
+  border: 1px solid var(--color-text-1);
 }
 .grid-button input:active {
-	background-color: var(--color-text-1);
+  background-color: var(--color-text-1);
 }
 .grid-button input:focus {
-	border-bottom-color: var(--color-bgd-3);
+  border-bottom-color: var(--color-bgd-3);
 }

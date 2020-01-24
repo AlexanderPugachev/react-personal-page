@@ -17,6 +17,7 @@
 	margin-bottom: 45px;
 	line-height: var(--line-height-main);
 }
+
 .project--descr_grid {
 	display: grid;
 	grid: 1fr / 4fr 3fr
@@ -73,6 +74,16 @@
 		width: 76px;
 	}
 	@media (max-width: 1300px) {
+	}
+}
+@media (max-width: 576px) {
+	.project--descr_name {
+	text-align: center;
+	}
+	.project--descr_text {
+		vertical-align: middle;
+		text-align: center;
+		margin-bottom: 25px;
 	}
 }
 .project--image-full {

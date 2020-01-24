@@ -17,10 +17,10 @@ class ContactForm extends React.Component {
 			<div>
 				<form className="contact-form" onSubmit={this.sendEmail}>
 					<div className="grid-name">
-						<input type="text" name="user_name" placeholder='Как к Вам обращаться*' required />
+						<input type="text" name="user_name" placeholder='Как к Вам обращаться? *' required />
 					</div>
 					<div className="grid-email">
-						<input type="email" name="user_email" placeholder='Ваш адрес электронной почты*' required />
+						<input type="email" name="user_email" placeholder='Ваш адрес электронной почты *' required />
 					</div>
 					<div className="grid-message">
 						<textarea name="message" placeholder='Дополнительная информация' />
@@ -29,10 +29,10 @@ class ContactForm extends React.Component {
 						<input type="submit" value="Отправить" />
 					</div>
 					<div id='contact-form_result' className="contact-form_result">
-						<p>Ваше сообщение отправлено, спасибо</p>
+						<p>Ваше сообщение отправлено, спасибо!</p>
 					</div>
 					<div id='contact-form_error' className="contact-form_error">
-						<p>	Возникла ошибка, попробуйте еще раз </p>
+						<p>	Возникла ошибка, попробуйте еще раз. </p>
 					</div>
 				</form>
 			</div>
